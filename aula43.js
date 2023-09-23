@@ -25,23 +25,33 @@ cursos.map((el,chave)=>{
     
 })
 
-btnCursoSelecionado.addEventListener("click",(evt)=>{
+// btnCursoSelecionado.addEventListener("click",(evt)=>{
+//     const todosRadios=[...document.querySelectorAll("input[type=radio]")]
+//     let radioSelecionado=todosRadios.filter((ele,ind,arr)=>{
+//         return ele.checked
+//     })
+//     radioSelecionado=radioSelecionado[0]
+//     //const cursoSelecionado=radioSelecionado.parentNode.parentNode.firstChild.textContent
+//     const cursoSelecionado=radioSelecionado.parentNode.previousSibling.textContent
+//     alert("Curso selecionado: " + cursoSelecionado)
+//     // console.log(todosRadios)
+//     // console.log(radioSelecionado)
+//     // console.log(cursoSelecionado)
+// })
+
+// // parentNode
+// // childNodes[nodenumber]
+// // firstChild
+// // lastChild
+// // nextSibling
+// // previousSibling
+
+btnCursoSelecionado.addEventListener("click", (evt) => {
     const todosRadios=[...document.querySelectorAll("input[type=radio]")]
-    let radioSelecionado=todosRadios.filter((ele,ind,arr)=>{
+    let radioSelecionado=todosRadios.filter((ele,ind,arr) => {
         return ele.checked
     })
-    radioSelecionado=radioSelecionado[0]
-    //const cursoSelecionado=radioSelecionado.parentNode.parentNode.firstChild.textContent
-    const cursoSelecionado=radioSelecionado.parentNode.previousSibling.textContent
-    alert("Curso selecionado: " + cursoSelecionado)
-    // console.log(todosRadios)
-    // console.log(radioSelecionado)
-    // console.log(cursoSelecionado)
+    radioSelecionado = radioSelecionado[0]
+    const cursoSelecionado = radioSelecionado.parentNode.parentNode.firstChild.textContent
+    alert("Curso seleciona " + cursoSelecionado)
 })
-
-// parentNode
-// childNodes[nodenumber]
-// firstChild
-// lastChild
-// nextSibling
-// previousSibling
