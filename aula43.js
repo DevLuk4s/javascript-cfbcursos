@@ -53,5 +53,5 @@ btnCursoSelecionado.addEventListener("click", (evt) => {
     })
     radioSelecionado = radioSelecionado[0]
     const cursoSelecionado = radioSelecionado.parentNode.parentNode.firstChild.textContent
-    alert("Curso seleciona " + cursoSelecionado)
+    alert("Curso seleciona com sucesso " + cursoSelecionado)
 })
