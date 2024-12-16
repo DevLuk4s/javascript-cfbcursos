@@ -1,6 +1,6 @@
-"use strict"
+"use strict"; // Modo strict
 
-let nome="Bruno"
-console.log("CFB Cursos")
-console.log(nome)
-console.log("Nome: " + nome)
+const nome = "Bruno";
+console.log("CFB Cursos");
+console.log(nome);
+console.log("Nome: " + nome);
